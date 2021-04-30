@@ -1,0 +1,180 @@
+
+body {
+    margin: 120px;
+}
+    h1 {
+    text-align: center;
+    background-color: lightblue;
+}
+h3 {
+    text-align: center;
+    background-color: lightblue;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.flexContainer {
+    margin: 120;
+    display:flex;
+    justify-content: space-evenly;
+    align-content:center;
+    padding: 5%;
+}
+
+.flexContainer img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    padding: 15%;
+}
+
+.flexContainer div {
+    padding: 5%;
+    margin:auto;
+    Width: 33%;
+    background-color: white;
+}
+
+.workGrid img {
+    grid-area: 'image';
+}
+.workGrid h4 {
+    grid-area: 'title';
+}
+.workGrid p {
+    grid-area: 'description';
+}
+.workGrid button {
+    grid-area: 'button';
+}
+
+.projectOne {
+    grid-area: 'projectOne';
+    max-width: 70%;
+}
+.projectTwo {
+    grid-area: 'projectTwo';
+    max-width: 70%;
+}
+.projectThree {
+    grid-area: 'projectThree';
+    max-width: 70%;
+}
+.workGrid {
+    margin: 320px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%; 
+    grid-template-areas: 
+    'projectOne'
+    "projectTwo"
+    'projectThree'; 
+}
+
+/*
+.projectOne {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%; 
+    grid-template-areas: 
+    'image title'
+    "image description"
+    'image button';
+    width: 88%; 
+}
+.projectTwo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;   
+    grid-template-areas: 
+    'image title'
+    "image description"
+    'image button'; 
+}
+.projectThree {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;   
+    grid-template-areas: 
+    'image title'
+    "image description"
+    'image button';
+    height: 10%;
+    width: 88%; 
+}
+*/
+
+.projectOne img {
+    width: 200px;
+    height: 200px;
+    padding: 1%;
+}
+
+.projectTwo img {
+    width: 200px;
+    height: 200px;
+    padding: 1%;
+}
+
+.projectThree img {
+    width: 200px;
+    max-height: 400px;
+    padding: 1%;
+}
+
+/*
+*/
+
+
+@media only screen and (max-width: 1000px) {
+    .workGrid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /*display: grid;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+        'image'
+        'title'
+        'image'
+        'description'
+        'image button'; */
+    }
+
+    .projectOne {
+        width: 100%; 
+    }
+
+    .projectTwo {
+        width: 100%; 
+    }
+
+    .projectThree {
+        width: 100%; 
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        /*display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+        'image'
+        'title'
+        'image'
+        'description'
+        'image button'; 
+    */
+    }
+}
