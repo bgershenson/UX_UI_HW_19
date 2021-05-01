@@ -59,14 +59,20 @@ h3 {
 .projectOne {
     grid-area: 'projectOne';
     max-width: 70%;
+    background-color: #3E4AB6;
+    opacity: .79;
 }
 .projectTwo {
     grid-area: 'projectTwo';
     max-width: 70%;
+    background-color: #3E4AB6;
+    opacity: .79;
 }
 .projectThree {
     grid-area: 'projectThree';
     max-width: 70%;
+    background-color: #3E4AB6;
+    opacity: .79;
 }
 .workGrid {
     margin: 320px;
