@@ -58,24 +58,52 @@ h3 {
 
 .projectOne {
     grid-area: 'projectOne';
-    max-width: 70%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 3%;
+}
+.projectOne:hover {
+    cursor: pointer;
     background-color: #3E4AB6;
-    opacity: .79;
+    color: white;
+    transform: scale(1.1);
 }
 .projectTwo {
     grid-area: 'projectTwo';
-    max-width: 70%;
+    width: 100%;
+    background-color:lightblue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 3%;
+}
+.projectTwo:hover {
+    cursor: pointer;
     background-color: #3E4AB6;
-    opacity: .79;
+    color: white;
+    transform: scale(1.1);
 }
 .projectThree {
     grid-area: 'projectThree';
-    max-width: 70%;
-    background-color: #3E4AB6;
-    opacity: .79;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 3%;
 }
+.projectThree:hover {
+    cursor: pointer;
+    background-color: #3E4AB6;
+    color: white;
+    transform: scale(1.1);
+}
+
 .workGrid {
-    margin: 320px;
+    margin: 220px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 100%; 
@@ -136,6 +164,34 @@ h3 {
     padding: 1%;
 }
 
+.preloader {
+    position: fixed;
+    width:100%;
+    height:100vh;
+    z-index:100000;
+    background-color: white;
+    top:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader img {
+    animation: spin 4s ease;
+    width:150px;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(360deg);
+    }
+    100% {
+        transform:rotate(720deg);
+    }
+}
 /*
 */
 
