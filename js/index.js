@@ -1,6 +1,13 @@
 console.log("It must be working player");
 
 /*
+function fade() {
+    $('.preloader').fadeOut("slow");
+}
+setTimeout(fade, 3000);
+
+*/
+/*
 $(".projectOne").hover (function() {
     $(this).css("opacity", "1""background-color", "#3E4AB6");
 }, function() {
@@ -23,11 +30,6 @@ $(".projectThree").hover(function() {
 
 })
 */
-
-function fade() {
-    $(".preloader").fadeOut("slow");
-}
-    setTimeout(fade, 3000);
 
 /*function fade() {
     $('.preloader').fadeOut("slow");

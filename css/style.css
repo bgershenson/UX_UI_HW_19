@@ -179,6 +179,8 @@ h3 {
 .preloader img {
     animation: spin 4s ease;
     width:150px;
+    transition: all;
+    margin: 0 auto;
 }
 
 @keyframes spin {
